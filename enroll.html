@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        input[type="text"],
+        input[type="tel"],
+        input[type="number"],
+        input[type="date"] {
+            margin-bottom: 10px;
+            padding: 10px;
+            width: 200px;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            margin-top: 10px;
+        }
+        h2 {
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <h2>Enrollment Form</h2>
+    <form method="post" height="100%">
+        Name: <input type="text" name="name" required><br>
+        Mobile Number: <input type="tel" name="mobile" required><br>
+        Year of Passing: <input type="number" name="year" required><br>
+        Date of Birth: <input type="date" name="dob" required><br>
+        <a href="./confirm.html"><input type="button" value="Submit"></a>
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
